@@ -1,8 +1,8 @@
-﻿<?php
+<?php
     session_start();
     $role = $_SESSION['role'];
     if(!isset($_SESSION['username']) || $role!="Chairman"){
-        header('Location: /FMS');
+      header('Location: /fleet');
     }
 
     include ('../conn.php');
@@ -16,14 +16,15 @@
     $Sname  = mysqli_real_escape_string($db, trim($_POST['lname']));
     $role = mysqli_real_escape_string($db, trim($_POST['role']));
     $user = mysqli_real_escape_string($db, trim($_POST['username']));
-    $pass = mysqli_real_escape_string($db, trim($_POST['pass']));
+    $passw = mysqli_real_escape_string($db, trim($_POST['pwd']));
+    $pass= md5($passw);
 
     //check for empty field
     if(!empty($Fname) && !empty($Sname) && !empty($role) && !empty($user) && !empty($pass)){
 
         
         //check for duplicate
-        $check= "SELECT COUNT(*) FROM usr WHERE first_name = '".$Fname."' && last_name = '".$Sname."' && role = '".$role."'";
+        $check= "SELECT COUNT(*) FROM usr WHERE first_name = '".$Fname."' && last_name = '".$Sname."' && role = '".$role."' && user = '".$user."'";
 
         $sql = mysqli_query($db,$check);
             
@@ -71,17 +72,13 @@
 ?>
     <section class="content">
         <div class="container-fluid">
-            <div class="block-header">
-                <h2>
-                    ADD NEW USER                    
-                </h2>
-            </div>
+            
             <!-- Basic Validation -->
             <div class="row clearfix">
                 <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>ADD USER</h2>
+                            <h2 class="text-center">VENDOR REGISTRATION</h2>
                         </div>
 
                             <?php
@@ -89,48 +86,52 @@
                                     echo $error;
                                 }
                             ?>
-
+                        <!-- Form Body starts -->
                         <div class="body">
-                            <form id="form_validation" method="POST" action="add_user.php" name="user">
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="fname" required>
-                                        <label class="form-label">First Name</label>
-                                    </div>
-                                </div>
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="lname" required>
-                                        <label class="form-label">Last Name</label>
-                                    </div>
-                                </div>
-
+                            <form id="form_validation" action="add_vendor.php" method="post" name="vendor">
                                 <div class="form-group">
-                                    <input type="radio" name="role" id="Administrator" value="Administrator" class="with-gap">
-                                    <label for="Administrator">Administrator</label>
-
-                                    <input type="radio" name="role" id="head" value="Head" class="with-gap">
-                                    <label for="head" class="m-l-20">Head of Store</label>
-
-                                    <input type="radio" name="role" id="officer" value="officer" class="with-gap">
-                                    <label for="officer" class="m-l-20">Store Officer</label>
-                                </div>
-                                
-                                <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" name="username" required>
-                                        <label class="form-label">Username</label>
+                                        <label for="vendorName">Enter Vendor Name</label>
+                                        <input type="text" class="form-control" name="vendorName">                                        
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <label for="vendorContatname">Enter Vendor Contact Person's Fullname</label>
+                                        <input type="text" class="form-control" name="vendorContactname">                                     
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <label for="vendorContactphone">Enter Vendor Contact Person's Phone Number</label>
+                                        <input type="text" class="form-control" name="vendorContactphone" >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <label for="vendorOfficalemail">Enter Vendor Official Email Address</label>
+                                        <input type="text" class="form-control" name="vendorOfficialemail">                                        
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <label for="services">Services</label>
+                                        <input type="text" name="services" class="form-control">
+                                    </div>
+                                </div>                                
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="password" class="form-control" name="pass" required>
-                                        <label class="form-label">Password</label>
+                                        <label for="date">Date</label>
+                                        <input type="text" value="<?php date_default_timezone_set("Africa/Lagos"); echo date('d/m/y h:ia');?>"/ disabled>
                                     </div>
                                 </div>
                                 
-                                <button class="btn btn-primary waves-effect" type="submit" name="user">SUBMIT</button>
+                                <!-- <button class="btn btn-primary waves-effect pull-right" type="submit" name="user">SUBMIT</button> -->
+                                <button class="btn btn-outline-primary " type="submit" name="user">SUBMIT</button>
+
                             </form>
+                            <!-- Form body ends -->
+                        </div>
                         </div>
                     </div>
                 </div>

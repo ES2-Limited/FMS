@@ -1,8 +1,8 @@
-﻿<?php
+<?php
     session_start();
     $role = $_SESSION['role'];
     if(!isset($_SESSION['username']) || $role!="Chairman"){
-        header('Location: /FMS');
+      header('Location: /fleet');
     }
 
     include ('../conn.php');
@@ -16,14 +16,15 @@
     $Sname  = mysqli_real_escape_string($db, trim($_POST['lname']));
     $role = mysqli_real_escape_string($db, trim($_POST['role']));
     $user = mysqli_real_escape_string($db, trim($_POST['username']));
-    $pass = mysqli_real_escape_string($db, trim($_POST['pass']));
+    $passw = mysqli_real_escape_string($db, trim($_POST['pwd']));
+    $pass= md5($passw);
 
     //check for empty field
     if(!empty($Fname) && !empty($Sname) && !empty($role) && !empty($user) && !empty($pass)){
 
         
         //check for duplicate
-        $check= "SELECT COUNT(*) FROM usr WHERE first_name = '".$Fname."' && last_name = '".$Sname."' && role = '".$role."'";
+        $check= "SELECT COUNT(*) FROM usr WHERE first_name = '".$Fname."' && last_name = '".$Sname."' && role = '".$role."' && user = '".$user."'";
 
         $sql = mysqli_query($db,$check);
             
@@ -71,11 +72,7 @@
 ?>
     <section class="content">
         <div class="container-fluid">
-            <div class="block-header">
-                <h2>
-                    ADD NEW USER                    
-                </h2>
-            </div>
+            
             <!-- Basic Validation -->
             <div class="row clearfix">
                 <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
@@ -106,14 +103,14 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="radio" name="role" id="Administrator" value="Administrator" class="with-gap">
+                                    <input type="radio" name="role" id="Administrator" value="Chairman" class="with-gap">
                                     <label for="Administrator">Administrator</label>
 
                                     <input type="radio" name="role" id="head" value="Head" class="with-gap">
-                                    <label for="head" class="m-l-20">Head of Store</label>
+                                    <label for="head" class="m-l-20">Head of Unit</label>
 
                                     <input type="radio" name="role" id="officer" value="officer" class="with-gap">
-                                    <label for="officer" class="m-l-20">Store Officer</label>
+                                    <label for="officer" class="m-l-20"> Officer</label>
                                 </div>
                                 
                                 <div class="form-group form-float">
@@ -124,7 +121,7 @@
                                 </div>
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="password" class="form-control" name="pass" required>
+                                        <input type="password" class="form-control" name="pwd" required>
                                         <label class="form-label">Password</label>
                                     </div>
                                 </div>
