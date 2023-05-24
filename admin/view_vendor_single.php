@@ -21,27 +21,42 @@
                         </div>
                         <div class="body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped table-hover dataTable js-exportable">
+                                <table class="table table-bordered table-striped table-hover">
                                     <thead>
-                                        
+                                        <tr>
+                                            <th colspan="4"> VENDOR Data  </th>
+                                            
+                                        </tr
                                         <tr>
                                             <th>VENDOR NAME</th>
                                             <th>VENDOR OFFICIAL ADDRESS</th>
                                              <th>CONTACT PERSON FULLNAME</th>
-                                            
+                                             <th>CONTACT PERSON FULLNAME</th> 
                                         </tr>
                                     </thead>
-                                <tbody>
-                                   
-                                <thead class="mt-60">
+                                    <tbody> 
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                    </tbody>
+                                </table>
+                                <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-hover">
+                                    <thead>
                                         <tr>
-                                            <th>CONTACT PERSON FULLNAME</th>
-                                            <th>CONTACT PERSON PHONE NUMBER</th>
-                                            <th>VENDOR OFFICIAL EMAIL</th>                                            
-                                           
+                                        <th>CONTACT PERSON FULLNAME</th>
+                                        <th>CONTACT PERSON PHONE NUMBER</th>
+                                        <th>VENDOR OFFICIAL EMAIL</th>
                                         </tr>
-                                </thead>
-                                
+                                    </thead>
+                                    <tbody> 
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        
+                                    </tbody>
+                                </table>
 
 
 
@@ -78,6 +93,7 @@
                             ?>                                        
 
                                     </tbody>
+                                </table>
                                 </table>
                             </div>
                         </div>
