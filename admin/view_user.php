@@ -34,43 +34,16 @@
                                             <th>Action</th>
                                         </tr>
                                     </thead>
-                                    <!-- <tfoot>
-                                        <tr>
-                                            <th>S/N</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Role</th>
-                                            <th>Username</th>
-                                            <th> </th>
-                                        </tr>
-                                    </tfoot> -->
                                     <tbody>
-
-
-
-                            <?php
-                                $result = "SELECT * FROM usr ";
-
-                                $query = mysqli_query($db, $result);
-                                    $sn = 0;
-                                while($row = mysqli_fetch_array($query))
-                                    // {
-                                    //     $sn++;
-                                    //     $fname=$row['first_name'];
-                                    //     $Sname=$row['last_name'];
-                                    //     $role=$row['role'];
-                                    //     $username=$row['user'];
-
-                                    //     echo "<tr>";
-                                    //     echo "<td> $sn </td>";
-                                    //     echo "<td> $fname </td>";
-                                    //     echo "<td> $Sname </td>";
-                                    //     echo "<td> $role </td>";
-                                    //     echo "<td> $username </td>";
-                                    //     echo "<td>  </td>";
-                                    //     echo "</tr>";
-                                    // }
-                            ?>                                        
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                       
 
                                     </tbody>
                                 </table>

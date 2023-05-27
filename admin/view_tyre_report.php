@@ -24,7 +24,7 @@
                                 <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                                     <thead>
                                         <tr>
-                                        <th>S/N</th>
+                                            <th>S/N</th>
                                             <th>SELECT VEHICLE</th>
                                             <!-- <th>SELECT VENDOR</th> -->
                                             <th>TYRE QUANTITY</th>
@@ -34,42 +34,13 @@
                                             <th>Action</th>
                                         </tr>
                                     </thead>
-                                <tbody>
-
-
-
-                            <?php
-                                // $result = "SELECT * FROM usr ";
-
-                                // $query = mysqli_query($db, $result);
-                                //     $sn = 0;
-                                // while($row = mysqli_fetch_array($query))
-                                    // {
-                                    //     $sn++;
-                                    //     $fname=$row['first_name'];
-                                    //     $Sname=$row['last_name'];
-                                    //     $role=$row['role'];
-                                    //     $username=$row['user'];
-
-                                    //     echo "<tr>";
-                                    //     echo "<td> $sn </td>";
-                                    //     echo "<td> $vendorName </td>";
-                                    //       echo "<td> $vendorAddress </td>";
-                                    //     echo "<td> $vendorContactname</td>";
-                                    //     echo "<td> $vendorContactphone </td>";
-                                    //     echo "<td> $vendorOfficailemail </td>";
-                                    //     echo "<td> $services </td>";
-                                    //     echo "<td>$date</td>";
-                                    //     echo  "<td><button type='button' class='btn btn-primary'><i class='far fa-eye'></i></button>
-                                                //<button type='button' class='btn btn-success'><i class='fas fa-edit'></i></button>
-                                                //<button type='button' class='btn btn-danger'><i class='far fa-trash-alt'></i></button>
-                                                //</td>";
-                                    //     echo "";
-                                    
-                                    //     echo "</tr>";
-                                    // }
-                            ?>                                        
-
+                                    <tbody>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tbody>
                                 </table>
                             </div>
