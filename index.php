@@ -28,7 +28,7 @@
      
             if($_SESSION['role']== "Chairman"){
 
-                header("location: /fleet/admin");
+                header("location: /FMS/admin");
 
 //            }elseif ($_SESSION['role']=="officer"){
 

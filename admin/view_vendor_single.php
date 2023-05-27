@@ -1,4 +1,4 @@
-﻿<?php
+<?php
     session_start();
     $role = $_SESSION['role'];
     if(!isset($_SESSION['username']) || $role!="Chairman"){
@@ -17,43 +17,55 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>VIEW USER </h2>
+                            <h2 class="text-center">VIEW VENDOR DATA</h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped table-hover dataTable js-exportable">
+                                <table class="table table-bordered table-striped table-hover">
                                     <thead>
                                         <tr>
-                                            <th>S/N</th>
-                                            <th>Staff Id</th>
-                                            <th>First Name</th>
-                                            <th>Middle Name</th>
-                                            <th>Last Name</th>
-                                            <th>Role</th>
-                                            <th>Username</th>
-                                            <th>Action</th>
+                                            <th colspan="4"> VENDOR Data  </th>
+                                            
+                                        </tr
+                                        <tr>
+                                            <th>VENDOR NAME</th>
+                                            <th>VENDOR OFFICIAL ADDRESS</th>
+                                             <th>CONTACT PERSON FULLNAME</th>
+                                             <th>CONTACT PERSON FULLNAME</th> 
                                         </tr>
                                     </thead>
-                                    <!-- <tfoot>
+                                    <tbody> 
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                    </tbody>
+                                </table>
+                                <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-hover">
+                                    <thead>
                                         <tr>
-                                            <th>S/N</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Role</th>
-                                            <th>Username</th>
-                                            <th> </th>
+                                        <th>CONTACT PERSON FULLNAME</th>
+                                        <th>CONTACT PERSON PHONE NUMBER</th>
+                                        <th>VENDOR OFFICIAL EMAIL</th>
                                         </tr>
-                                    </tfoot> -->
-                                    <tbody>
+                                    </thead>
+                                    <tbody> 
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        
+                                    </tbody>
+                                </table>
 
 
 
                             <?php
-                                $result = "SELECT * FROM usr ";
+                                // $result = "SELECT * FROM usr ";
 
-                                $query = mysqli_query($db, $result);
-                                    $sn = 0;
-                                while($row = mysqli_fetch_array($query))
+                                // $query = mysqli_query($db, $result);
+                                //     $sn = 0;
+                                // while($row = mysqli_fetch_array($query))
                                     // {
                                     //     $sn++;
                                     //     $fname=$row['first_name'];
@@ -63,16 +75,25 @@
 
                                     //     echo "<tr>";
                                     //     echo "<td> $sn </td>";
-                                    //     echo "<td> $fname </td>";
-                                    //     echo "<td> $Sname </td>";
-                                    //     echo "<td> $role </td>";
-                                    //     echo "<td> $username </td>";
-                                    //     echo "<td>  </td>";
+                                    //     echo "<td> $vendorName </td>";
+                                    //       echo "<td> $vendorAddress </td>";
+                                    //     echo "<td> $vendorContactname</td>";
+                                    //     echo "<td> $vendorContactphone </td>";
+                                    //     echo "<td> $vendorOfficailemail </td>";
+                                    //     echo "<td> $services </td>";
+                                    //     echo "<td>$date</td>";
+                                    //     echo  "<td><button type='button' class='btn btn-primary'><i class='far fa-eye'></i></button>
+                                                //<button type='button' class='btn btn-success'><i class='fas fa-edit'></i></button>
+                                                //<button type='button' class='btn btn-danger'><i class='far fa-trash-alt'></i></button>
+                                                //</td>";
+                                    //     echo "";
+                                    
                                     //     echo "</tr>";
                                     // }
                             ?>                                        
 
                                     </tbody>
+                                </table>
                                 </table>
                             </div>
                         </div>

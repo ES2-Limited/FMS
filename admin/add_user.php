@@ -86,48 +86,73 @@
                                     echo $error;
                                 }
                             ?>
-
+                        <!-- Form Body starts -->
                         <div class="body">
-                            <form id="form_validation" method="POST" action="add_user.php" name="user">
-                                <div class="form-group form-float">
+                            <form id="form_validation" action="add_user.php" method="post" name="user">
+                                <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" name="fname" required>
-                                        <label class="form-label">First Name</label>
+                                        <label for="staff id">Enter Staff Id</label>
+                                        <input type="text" class="form-control" name="staff_id">                                        
                                     </div>
                                 </div>
-                                <div class="form-group form-float">
+                                <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" name="lname" required>
-                                        <label class="form-label">Last Name</label>
+                                        <label for="fname">Enter Staff First Name</label>
+                                        <input type="text" class="form-control" name="fname">                                     
                                     </div>
                                 </div>
-
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <label for="mdname">Enter Staff Middle Name</label>
+                                        <input type="text" class="form-control" name="mdname" >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <label for="lname">Enter Staff Last Name</label>
+                                        <input type="text" class="form-control" name="lname">                                        
+                                    </div>
+                                </div>
                                 <div class="form-group">
                                     <input type="radio" name="role" id="Administrator" value="Chairman" class="with-gap">
-                                    <label for="Administrator">Administrator</label>
-
+                                    <label for="Administrator" class="m-l-20">Administrator</label>
+                                    
                                     <input type="radio" name="role" id="head" value="Head" class="with-gap">
                                     <label for="head" class="m-l-20">Head of Unit</label>
 
                                     <input type="radio" name="role" id="officer" value="officer" class="with-gap">
                                     <label for="officer" class="m-l-20"> Officer</label>
+
+                                    <input type="radio" name="role" id="driver" value="driver" class="with-gap">
+                                     <label for="driver" class="m-l-20"> Driver</label>
+                                    
                                 </div>
-                                
                                 <div class="form-group form-float">
                                     <div class="form-line">
+                                        <label for="username">Username</label>
                                         <input type="text" class="form-control" name="username" required>
-                                        <label class="form-label">Username</label>
                                     </div>
                                 </div>
                                 <div class="form-group form-float">
                                     <div class="form-line">
+                                        <label for="password" class="form-control">Password</label>
                                         <input type="password" class="form-control" name="pwd" required>
-                                        <label class="form-label">Password</label>
+
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <label for="date">Date</label>
+                                        <input type="text" value="<?php date_default_timezone_set("Africa/Lagos"); echo date('d/m/y h:ia');?>"/ disabled>
                                     </div>
                                 </div>
                                 
-                                <button class="btn btn-primary waves-effect" type="submit" name="user">SUBMIT</button>
+                                <!-- <button class="btn btn-primary waves-effect pull-right" type="submit" name="user">SUBMIT</button> -->
+                                <button class="btn btn-outline-primary " type="submit" name="user">SUBMIT</button>
+
                             </form>
+                            <!-- Form body ends -->
+                        </div>
                         </div>
                     </div>
                 </div>
