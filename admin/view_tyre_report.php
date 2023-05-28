@@ -1,4 +1,4 @@
-﻿<?php
+<?php
     session_start();
     $role = $_SESSION['role'];
     if(!isset($_SESSION['username']) || $role!="Chairman"){
@@ -17,7 +17,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>VIEW USER </h2>
+                            <h2 class="text-center">VIEW TYRE REPORT</h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
@@ -25,12 +25,12 @@
                                     <thead>
                                         <tr>
                                             <th>S/N</th>
-                                            <th>Staff Id</th>
-                                            <th>First Name</th>
-                                            <th>Middle Name</th>
-                                            <th>Last Name</th>
-                                            <th>Role</th>
-                                            <th>Username</th>
+                                            <th>SELECT VEHICLE</th>
+                                            <!-- <th>SELECT VENDOR</th> -->
+                                            <th>TYRE QUANTITY</th>
+                                            <!-- <th>RATE</th> -->
+                                            <th>VEHICLE ODOMETER</th>
+                                            <th>Date</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -41,10 +41,6 @@
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td></td>
-                                        <td></td>
-                                       
-
                                     </tbody>
                                 </table>
                             </div>

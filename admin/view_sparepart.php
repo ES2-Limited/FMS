@@ -1,4 +1,4 @@
-﻿<?php
+<?php
     session_start();
     $role = $_SESSION['role'];
     if(!isset($_SESSION['username']) || $role!="Chairman"){
@@ -17,36 +17,36 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>VIEW USER </h2>
+                            <h2>VIEW SPARE PART REQUEST DATA</h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped table-hover dataTable js-exportable">
+                                <table class="table table-bordered table-striped table-hover-exportable">
                                     <thead>
                                         <tr>
+                                            <th colspan="6">VIEW SPARE PART REQUEST</th>                                            
+                                        </tr>
+                                        <tr>
                                             <th>S/N</th>
-                                            <th>Staff Id</th>
-                                            <th>First Name</th>
-                                            <th>Middle Name</th>
-                                            <th>Last Name</th>
-                                            <th>Role</th>
-                                            <th>Username</th>
-                                            <th>Action</th>
+                                            <th>Vehicle Registration No</th>
+                                            <th>Driver Name</th>
+                                            <th>Spare Part Needed</th>
+                                            <th>Reason</th>
+                                            <th>Date</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody> 
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
                                         <td></td>
                                         <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                       
-
                                     </tbody>
                                 </table>
+                                    <!-- </tbody>
+                                </table>
+                                </table> -->
                             </div>
                         </div>
                     </div>

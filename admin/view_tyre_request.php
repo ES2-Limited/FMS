@@ -18,21 +18,21 @@
                 <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2 class="text-center">VENDOR REGISTRATION</h2>
+                            <h2 class="text-center">TYRE PURCHASE</h2>
                         </div>
                         <!-- Form Body starts -->
                         <div class="body">
-                            <form id="form_validation" action="add_vendor.php" method="post" name="vendor">
+                            <form id="form_validation" action="#" method="post" name="#">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <label for="vendorName">Enter Vendor Name</label>
-                                        <input type="text" class="form-control" name="vendorName">                                        
+                                        <label for="vehicle">Please Select a Vehicle</label>
+                                        <input type="text" class="form-control" name="vehicle">                                        
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <label for="vendorContatname">Enter Vendor Contact Person's Fullname</label>
-                                        <input type="text" class="form-control" name="vendorContactname">                                     
+                                        <label for="vendor">Please Select a Vendor</label>
+                                        <input type="text" class="form-control" name="vendor">                                     
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -43,16 +43,22 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <label for="vendorOfficalemail">Enter Vendor Official Email Address</label>
-                                        <input type="text" class="form-control" name="vendorOfficialemail">                                        
+                                        <label for="tyre_quantity">TYRE QUANTITY</label>
+                                        <input type="text" class="form-control" name="tyre_quantity">                                        
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <label for="services">Services</label>
-                                        <input type="text" name="services" class="form-control">
+                                        <label for="rate">RATE</label>
+                                        <input type="text" name="rate" class="form-control">
                                     </div>
-                                </div>                                
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <label for="vehicle_odometer">VEHICLE ODOMETER</label>
+                                        <input type="text" name="vehicle_odometer" class="form-control">
+                                    </div>
+                                </div>                                 
                                 <div class="form-group form-float">
                                     <div class="form-line">
                                         <label for="date">Date</label>
