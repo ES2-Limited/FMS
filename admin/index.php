@@ -97,28 +97,6 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="info-box bg-cyan hover-zoom-effect">
-                        <div class="icon">
-                            <i class="material-icons">build</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">SPARE PART REQUEST </div>
-                            <div class="number count-to" data-from="0" data-to="100" data-speed="5" data-fresh-interval="20"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="info-box bg-light-green hover-zoom-effect">
-                        <div class="icon">
-                            <i class="material-icons">report</i>
-                        </div>
-                        <div class="content">
-                            <div class="text">RESOLVED ISSUES</div>
-                            <div class="number count-to" data-from="0" data-to="100" data-speed="5" data-fresh-interval="20"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="info-box bg-green hover-zoom-effect">
                         <div class="icon">
                             <i class="material-icons">local_gas_station</i>
@@ -135,8 +113,8 @@
                             <i class="material-icons">build</i>
                         </div>
                         <div class="content">
-                            <div class="text">RESOLVED SPAREPART REQUEST</div>
-                            <div class="number count-to" data-from="0" data-to="<?php echo $user_count?>" data-speed="5" data-fresh-interval="20"></div>
+                            <div class="text">SPARE PART REQUEST </div>
+                            <div class="number count-to" data-from="0" data-to="100" data-speed="5" data-fresh-interval="20"></div>
                         </div>
                     </div>
                 </div>

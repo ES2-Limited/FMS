@@ -17,7 +17,7 @@
             <!-- Menu -->
             <div class="menu">
                 <ul class="list">
-                    <li >
+                    <li>
                         <a href="index.php">
                             <i class="material-icons">home</i>
                             <span>HOME</span>
@@ -37,7 +37,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="view_driver.php">
                                     <i class="material-icons">assignment</i>
                                     <span>Driver Report</span>
                                 </a>
@@ -83,13 +83,13 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="#">
+                                <a href="fuel_request.php">
                                     <i class="material-icons">assignment</i>
                                     <span>Fuel Request</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="view_fuel_request.php">
                                     <i class="material-icons">assignment</i>
                                     <span>Fuel Request Report</span>
                                 </a>
