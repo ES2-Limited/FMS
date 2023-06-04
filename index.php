@@ -28,11 +28,8 @@
      
             if($_SESSION['role']== "Chairman"){
 
-                header("location: /FMS/admin");
+                header("location: /fleets/admin");
 
-//            }elseif ($_SESSION['role']=="officer"){
-
-//                header("location: /FMS/driver");
             }
 
             }

@@ -20,7 +20,7 @@
             <!-- Widgets -->
           <div class="row clearfix">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="info-box bg-orange hover-zoom-effect">
+                    <div class="info-box bg-green hover-zoom-effect">
                         <div class="icon">
                             <i class="material-icons">directions_car</i>
                         </div>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="info-box bg-orange hover-zoom-effect">
+                    <div class="info-box bg-green hover-zoom-effect">
                         <div class="icon">
                             <i class="material-icons">directions_car</i>
                         </div>
@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="info-box bg-orange hover-zoom-effect">
+                    <div class="info-box bg-green hover-zoom-effect">
                         <div class="icon">
                             <i class="material-icons">local_gas_station</i>
                         </div>
@@ -119,7 +119,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="info-box bg-orange hover-zoom-effect">
+                    <div class="info-box bg-green hover-zoom-effect">
                         <div class="icon">
                             <i class="material-icons">local_gas_station</i>
                         </div>

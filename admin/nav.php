@@ -37,7 +37,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="driver_report.php">
+                                <a href="#">
                                     <i class="material-icons">assignment</i>
                                     <span>Driver Report</span>
                                 </a>
@@ -142,7 +142,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="view_issue.php">
                                     <i class="material-icons">assignment</i>
                                     <span>Issue Report</span>
                                 </a>
@@ -175,7 +175,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="view_tyre_report.php">
                                     <i class="material-icons">assignment</i>
                                     <span>Tyre Report</span>
                                 </a>
@@ -201,7 +201,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="view_vendor.php">
                                     <i class="material-icons">store</i>
                                     <span>Vendor Report</span>
                                 </a>

@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-$db = mysqli_connect("localhost", "root", "", "fleet");
+$db = mysqli_connect("localhost", "root", "root", "fleet");
 
 if (!$db) {
     die("ERROR: " . mysqli_connect_error);
