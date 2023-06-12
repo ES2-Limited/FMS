@@ -103,7 +103,7 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="#">
+                                <a href="maintenace_request_list.php">
                                     <i class="material-icons">assignment</i>
                                     <span>Vehicle Maintenance Request</span>
                                 </a>
@@ -115,13 +115,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="maintenance_service_request.php">
                                     <i class="material-icons">assignment</i>
                                     <span>Vehicle Service Request</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="maintenance_service_request_report.php">
                                     <i class="material-icons">assignment</i>
                                     <span>Vehicle Service Report</span>
                                 </a>

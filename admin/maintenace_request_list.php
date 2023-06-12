@@ -1,22 +1,21 @@
-﻿<?php
+<?php
     session_start();
-    $role = $_SESSION['role'];
-    if(!isset($_SESSION['username']) || $role!="Chairman"){
-        header('Location: /fleet');
-    }
-
-    include '../conn.php';
+    
     include 'head.php';
     include 'nav.php';
 ?>
     <section class="content">
         <div class="container-fluid">
+            <div class="block-header">
+                <h2> VEHICLE MAINTENANCE REQUEST </h2>
+            </div>
+
             <!-- Exportable Table -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>EDIT USERS </h2>
+                            <h2>VEHICLE MAINTENANCE REQUEST </h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
@@ -24,57 +23,39 @@
                                     <thead>
                                         <tr>
                                             <th>S/N</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Role</th>
-                                            <th>Username</th>
-                                            <th> </th>
+                                            <th> Name of Officer</th>
+                                            <th>Designation</th>
+                                            <th>Department/Unit</th>
+                                            <th>Vehicle No.</th>
+                                            <th>Date</th>
+                                            
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>S/N</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Role</th>
-                                            <th>Username</th>
-                                            <th> </th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
-
-
-
-                            <?php
-                                $result = "SELECT * FROM usr ";
-
-                                $query = mysqli_query($db, $result);
-                                    $sn = 0;
-                                while($row = mysqli_fetch_array($query))
-                                    {
-                                        $sn++;
-                                        $fname=$row['first_name'];
-                                        $Sname=$row['last_name'];
-                                        $role=$row['role'];
-                                        $username=$row['user'];
-
-                                        echo "<tr>";
-                                        echo "<td> $sn </td>";
-                                        echo "<td> $fname </td>";
-                                        echo "<td> $Sname </td>";
-                                        echo "<td> $role </td>";
-                                        echo "<td> $username </td>";
-                                        echo "<td>
-                                                <a href=\"javascript:void(0);\" class=\"menu-toggle\">
-                                                    <i class=\"material-icons\">edit</i>
-                                                    <span>EDIT</span>
-                                                </a>
-                                            </td>
-                                        ";
-                                        echo "</tr>";
-                                    }
-                            ?>                                        
-
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Shad Decker</td>
+                                            <td>112233</td>
+                                            <td>33224455</td>
+                                            <td>2008/11/13</td>
+                                            <td>2012-09-26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Shad Decker</td>
+                                            <td>112233</td>
+                                            <td>33224455</td>
+                                            <td>2008/11/13</td>
+                                            <td>2012-09-26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Shad Decker</td>
+                                            <td>112233</td>
+                                            <td>33224455</td>
+                                            <td>2008/11/13</td>
+                                            <td>2012-09-26</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
