@@ -1,18 +1,14 @@
 <?php
-    session_start();
-    $role = $_SESSION['role'];
-    if(!isset($_SESSION['username']) || $role!="Chairman"){
-      header('Location: /fleet');
-    }
-
-    include ('../conn.php');
 
     include 'head.php';
     include 'nav.php';
 ?>
     <section class="content">
         <div class="container-fluid">
-            
+            <div class="block-header">
+                <h2> ISSUES </h2>
+            </div>
+
             <!-- Basic Validation -->
             <div class="row clearfix">
                 <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">

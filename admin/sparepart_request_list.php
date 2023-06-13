@@ -1,13 +1,14 @@
 <?php
     session_start();
-    
+
+    include '../conn.php';
     include 'head.php';
     include 'nav.php';
 ?>
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2> VEHICLE MAINTENANCE REQUEST </h2>
+                <h2> SPARE PART REQUEST </h2>
             </div>
 
             <!-- Exportable Table -->
@@ -15,47 +16,31 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>VEHICLE MAINTENANCE REQUEST </h2>
+                            <h2>VIEW SPARE PART REQUEST DATA</h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped table-hover dataTable js-exportable">
+                                <table class="table table-bordered table-striped table-hover-exportable">
                                     <thead>
                                         <tr>
+                                            <th colspan="6">VIEW SPARE PART REQUEST</th>                                            
+                                        </tr>
+                                        <tr>
                                             <th>S/N</th>
-                                            <th> Name of Officer</th>
-                                            <th>Designation</th>
-                                            <th>Department/Unit</th>
-                                            <th>Vehicle No.</th>
+                                            <th>Vehicle Registration No</th>
+                                            <th>Driver Name</th>
+                                            <th>Spare Part Needed</th>
+                                            <th>Reason</th>
                                             <th>Date</th>
-                                            
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Shad Decker</td>
-                                            <td>112233</td>
-                                            <td>33224455</td>
-                                            <td>2008/11/13</td>
-                                            <td>2012-09-26</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Shad Decker</td>
-                                            <td>112233</td>
-                                            <td>33224455</td>
-                                            <td>2008/11/13</td>
-                                            <td>2012-09-26</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Shad Decker</td>
-                                            <td>112233</td>
-                                            <td>33224455</td>
-                                            <td>2008/11/13</td>
-                                            <td>2012-09-26</td>
-                                        </tr>
+                                    <tbody> 
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td></td>
+                                        <td></td>
                                     </tbody>
                                 </table>
                             </div>

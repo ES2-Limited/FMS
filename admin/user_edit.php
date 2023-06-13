@@ -1,9 +1,4 @@
 ﻿<?php
-    session_start();
-    $role = $_SESSION['role'];
-    if(!isset($_SESSION['username']) || $role!="Chairman"){
-        header('Location: /fleet');
-    }
 
     include '../conn.php';
     include 'head.php';
@@ -11,13 +6,16 @@
 ?>
     <section class="content">
         <div class="container-fluid">
+            <div class="block-header">
+                <h2> USER MANAGEMENT </h2>
+            </div>
 
             <!-- Exportable Table -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>VIEW USER </h2>
+                            <h2> USERS MANAGEMENT</h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
@@ -25,25 +23,64 @@
                                     <thead>
                                         <tr>
                                             <th>S/N</th>
-                                            <th>Staff Id</th>
                                             <th>First Name</th>
-                                            <th>Middle Name</th>
                                             <th>Last Name</th>
                                             <th>Role</th>
+                                            <th>Phone Number</th>
                                             <th>Username</th>
-                                            <th>Action</th>
+                                            <th> </th>
                                         </tr>
                                     </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>S/N</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Role</th>
+                                            <th>Phone Number</th>
+                                            <th>Username</th>
+                                            <th> </th>
+                                        </tr>
+                                    </tfoot>
                                     <tbody>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                       
+
+
+
+                            <?php
+                                $result = "SELECT * FROM usr ";
+
+                                $query = mysqli_query($db, $result);
+                                    $sn = 0;
+                                while($row = mysqli_fetch_array($query))
+                                    {
+                                        $sn++;
+                                        $id=$row['usr_id'];
+                                        $fname=$row['first_name'];
+                                        $Sname=$row['last_name'];
+                                        $role=$row['role'];
+                                        $phone=$row['tel'];
+                                        $username=$row['user'];
+
+
+                                        echo "<tr>";
+                                        echo "<td> $sn </td>";
+                                        echo "<td> $fname </td>";
+                                        echo "<td> $Sname </td>";
+                                        echo "<td> $role </td>";
+                                        echo "<td> $phone </td>";
+                                        echo "<td> $username </td>";
+                                        echo "<td>
+                                                <a href=\"javascript:void(0);\" class=\"menu-toggle\">
+                                                <a href='user_update.php?update=$id' target='_blank'>
+                                                    <i class=\"material-icons\">edit</i>
+                                                    <span> EDIT </span>
+                                                </a>
+                                                </a>
+                                               
+                                            </td>";
+                                        echo "</tr>";
+                                    }
+                            ?>                                        
 
                                     </tbody>
                                 </table>

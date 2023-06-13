@@ -1,13 +1,13 @@
-<?php
-    session_start();
+﻿<?php
 
+    include '../conn.php';
     include 'head.php';
     include 'nav.php';
 ?>
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2> FUEL REQUEST </h2>
+                <h2> USER MANAGEMENT </h2>
             </div>
 
             <!-- Exportable Table -->
@@ -15,7 +15,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>FUEL REQUEST </h2>
+                            <h2>VIEW USER </h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
@@ -23,40 +23,53 @@
                                     <thead>
                                         <tr>
                                             <th>S/N</th>
-                                            <th>Vehicle Registration No.</th>
-                                            <th>Driver Name</th>
-                                            <th>Product</th>
-                                            <th>Quantity/Litres</th>
-                                            <th>Date</th>
-                                            
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Role</th>
+                                            <th>Phone Number</th>
+                                            <th>Username</th>
+                                            <th> </th>
                                         </tr>
                                     </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>S/N</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Role</th>
+                                            <th>Phone Number</th>
+                                            <th>Username</th>
+                                            <th> </th>
+                                        </tr>
+                                    </tfoot>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>112233</td>
-                                            <td>Shad Decker</td>
-                                            <td>PMS</td>
-                                            <td>200</td>
-                                            <td>2008/11/13</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>112233</td>
-                                            <td>Shad Decker</td>
-                                            <td>PMS</td>
-                                            <td>200</td>
-                                            <td>2008/11/13</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>112233</td>
-                                            <td>Shad Decker</td>
-                                            <td>PMS</td>
-                                            <td>200</td>
-                                            <td>2008/11/13</td>
-                                        </tr>
-                                        
+
+                            <?php
+                                $result = "SELECT * FROM usr";
+
+                                $query = mysqli_query($db, $result);
+                                    $sn = 0;
+                                while($row = mysqli_fetch_array($query))
+                                    {
+                                        $sn++;
+                                        $fname=$row['first_name'];
+                                        $Sname=$row['last_name'];
+                                        $role=$row['role'];
+                                        $phone=$row['tel'];
+                                        $username=$row['user'];
+
+                                        echo "<tr>";
+                                        echo "<td> $sn </td>";
+                                        echo "<td> $fname </td>";
+                                        echo "<td> $Sname </td>";
+                                        echo "<td> $role </td>";
+                                        echo "<td> $phone </td>";
+                                        echo "<td> $username </td>";
+                                        echo "<td>  </td>";
+                                        echo "</tr>";
+                                    }
+                            ?>                                        
+
                                     </tbody>
                                 </table>
                             </div>

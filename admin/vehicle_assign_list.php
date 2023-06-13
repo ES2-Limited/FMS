@@ -1,9 +1,5 @@
-﻿<?php
+<?php
     session_start();
-    // $role = $_SESSION['role'];
-    // if(!isset($_SESSION['username']) || $role!="Chairman"){
-    //     header('Location: /fleet');
-    // }
 
     include 'head.php';
     include 'nav.php';
@@ -11,7 +7,7 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2> </h2>
+                <h2> VEHICLE ASSIGNMENT</h2>
             </div>
 
             <!-- Exportable Table -->
@@ -19,19 +15,19 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2></h2>
+                            <h2>REPORT: VEHICLE-DRIVER ASSIGNMENT </h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped">
+                                <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                                     <thead>
                                         <tr>
                                             <th>S/N</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                            <th>Role</th>
-                                            <th>DATE</th>
+                                            <th>Driver Name</th>
+                                            <th>Assigned Vehicle Name</th>
+                                            <th>Starting Odometer</th>
+                                            <th>Vehicle Status</th>
+                                            <th>Date</th>
                                         </tr>
                                     </thead>
                                     <tbody>

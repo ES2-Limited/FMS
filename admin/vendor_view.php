@@ -1,9 +1,5 @@
 <?php
     session_start();
-    $role = $_SESSION['role'];
-    if(!isset($_SESSION['username']) || $role!="Chairman"){
-        header('Location: /fleet');
-    }
 
     include '../conn.php';
     include 'head.php';
@@ -11,36 +7,51 @@
 ?>
     <section class="content">
         <div class="container-fluid">
+            <div class="block-header">
+                <h2> VENDOR MANAGEMENT </h2>
+            </div>
 
             <!-- Exportable Table -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2 class="text-center">VIEW TYRE REPORT</h2>
+                            <h2 class="text-center">VIEW VENDOR DATA</h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped table-hover dataTable js-exportable">
+                                <table class="table table-bordered table-striped table-hover">
                                     <thead>
                                         <tr>
-                                            <th>S/N</th>
-                                            <th>SELECT VEHICLE</th>
-                                            <!-- <th>SELECT VENDOR</th> -->
-                                            <th>TYRE QUANTITY</th>
-                                            <!-- <th>RATE</th> -->
-                                            <th>VEHICLE ODOMETER</th>
-                                            <th>Date</th>
-                                            <th>Action</th>
+                                            <th colspan="4"> VENDOR Data  </th>
+                                            
+                                        </tr
+                                        <tr>
+                                            <th>VENDOR NAME</th>
+                                            <th>VENDOR OFFICIAL ADDRESS</th>
+                                             <th>CONTACT PERSON FULLNAME</th>
+                                             <th>CONTACT PERSON FULLNAME</th> 
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                    <tbody> 
+                                        <td> Saif </td>
+                                        <td> abuja</td>
+                                        <td> </td>
+                                        <td> </td>
+                                    </tbody>
+                                
+                                    <thead>
+                                        <tr>
+                                        <th>CONTACT PERSON FULLNAME</th>
+                                        <th>CONTACT PERSON PHONE NUMBER</th>
+                                        <th>VENDOR OFFICIAL EMAIL</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody> 
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        
                                     </tbody>
                                 </table>
                             </div>
