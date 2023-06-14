@@ -39,6 +39,7 @@
                                             <td>33224455</td>
                                             <td>2012-09-26h</td>
                                             <td>2008/11/13</td>
+                                            <td> <a href="driver_info.php">View Detail</a></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -47,6 +48,7 @@
                                             <td>33224455</td>
                                             <td>2012-09-26h</td>
                                             <td>2008/11/13</td>
+                                            <td><a href="driver_info.php">View Detail</a></td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
@@ -55,6 +57,7 @@
                                             <td>33224455</td>
                                             <td>2012-09-26h</td>
                                             <td>2008/11/13</td>
+                                            <td><a href="driver_info.php">View Detail</a></td>
                                         </tr>
                                     </tbody>
                                 </table>

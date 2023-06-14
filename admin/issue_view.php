@@ -31,15 +31,16 @@
                                             <th>Action</th>
                                         </tr>
                                     </thead>
-                                <tbody>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tbody>
-                                </tbody>
-                            </table>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Brake</td>
+                                            <td>Brake failure</td>
+                                            <td>10-12-2022</td>
+                                            <td>change</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>

@@ -1,11 +1,12 @@
 <?php
+    session_start();
 
+    include '../conn.php';
     include 'head.php';
     include 'nav.php';
 ?>
     <section class="content">
         <div class="container-fluid">
-    
             <div class="block-header">
                 <h2> SPARE PART REQUEST </h2>
             </div>
@@ -15,7 +16,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>VIEW SPARE PART REQUEST DATA</h2>
+                            <h2> SPAREPART REPORT</h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
@@ -28,23 +29,33 @@
                                             <th>S/N</th>
                                             <th>Vehicle Registration No</th>
                                             <th>Driver Name</th>
-                                            <th>Spare Part Needed</th>
+                                            <th>SparePart Needed</th>
                                             <th>Reason</th>
+                                            <th>Approval</th>
                                             <th>Date</th>
                                         </tr>
                                     </thead>
                                     <tbody> 
-                                        <td> </td>
-                                        <td> </td>
-                                        <td> </td>
-                                        <td> </td>
-                                        <td></td>
-                                        <td></td>
+                                        <tr>
+                                            <td> 1 </td>
+                                            <td> 112233</td>
+                                            <td> Saif </td>
+                                            <td> brake oil</td>
+                                            <td> dried</td>
+                                            <td> Approved</td>
+                                            <td> 20-03-2012</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2 </td>
+                                            <td> 112233</td>
+                                            <td> Saif </td>
+                                            <td> Engine oil</td>
+                                            <td> Top-up</td>
+                                            <td> disapproved</td>
+                                            <td> 20-03-2022</td>
+                                        </tr>
                                     </tbody>
                                 </table>
-                                    <!-- </tbody>
-                                </table>
-                                </table> -->
                             </div>
                         </div>
                     </div>

@@ -29,9 +29,9 @@
                         <!-- Form Body starts -->
                         <div class="body">
                             <div class="date text-right">
-                                <p><?php date_default_timezone_set("Africa/Lagos"); echo date('d/m/y h:ia');?></p>
+                                <p><b>Date:</b>  <?php date_default_timezone_set("Africa/Lagos"); echo date('d/m/y h:ia');?></p>
                             </div>
-                            <form id="form_validation" action="approve_request_sparepart.php" method="post" name="approve_sparepart">
+                            <form id="form_validation" action="" method="post" name="sparepart_approval">
                                 <div class="form-group">
                                     <div class="form-line">
                                         <label for="vehicle_reg">Vehicle Registration No.</label>
@@ -56,10 +56,10 @@
                                         <input type="text" class="form-control" name="reason_change">                                        
                                     </div>
                                 
-                                
+                                </div>
                                 <!-- <button class="btn btn-primary waves-effect pull-right" type="submit" name="user">SUBMIT</button> -->
-                                <button class="btn btn-outline-primary " type="submit" name="">Approve</button>
-                                <button class="btn btn-outline-danger pull-right">Disapprove</button>
+                                <button class="btn btn-primary " type="submit" name="sparepart_approve">Approve</button>
+                                <button class="btn btn-danger pull-right" name="sparepart_disapprove">Disapprove</button>
 
                             </form>
                             <!-- Form body ends -->

@@ -109,6 +109,12 @@
                             <li>
                                 <a href="fuel_request_list.php">
                                     <i class="material-icons">assignment</i>
+                                    <span>Fuel Request List</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="fuel_report.php">
+                                    <i class="material-icons">assignment</i>
                                     <span>Fuel Request Report</span>
                                 </a>
                             </li>
@@ -213,7 +219,7 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="vendor_reg.php">
+                                <a href="vendor_add.php">
                                     <i class="material-icons">store</i>
                                     <span>Vendor Registration</span>
                                 </a>

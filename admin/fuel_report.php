@@ -7,7 +7,7 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2> VEHICLE MANAGEMENT</h2>
+                <h2> FUEL MANAGEMENT </h2>
             </div>
 
             <!-- Exportable Table -->
@@ -15,7 +15,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>REPORT: VEHICLE-DRIVER ASSIGNMENT </h2>
+                            <h2>FUEL REPORT </h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
@@ -23,42 +23,44 @@
                                     <thead>
                                         <tr>
                                             <th>S/N</th>
+                                            <th>Vehicle Registration No.</th>
                                             <th>Driver Name</th>
-                                            <th>Assigned Vehicle Name</th>
-                                            <th>Starting Odometer</th>
-                                            <th>Vehicle Status</th>
+                                            <th>Product</th>
+                                            <th>Quantity/Litres</th>
+                                            <th>Approved/Litres</th>
                                             <th>Date</th>
-                                            <th> </th>
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
+                                            <td>112233</td>
                                             <td>Shad Decker</td>
-                                            <td>Regional Director</td>
-                                            <td>Edinburgh</td>
-                                            <td>Edinburgh</td>
+                                            <td>PMS</td>
+                                            <td>200</td>
+                                            <td>20</td>
                                             <td>2008/11/13</td>
-                                            <td><a href="vehicle_assign_info.php">Detail</a></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>Michael Bruce</td>
-                                            <td>Javascript Developer</td>
-                                            <td>Singapore</td>
-                                            <td>Singapore</td>
-                                            <td>2011/06/27</td>
-                                            <td><a href="vehicle_assign_info.php">Detail</a></td>
+                                            <td>112233</td>
+                                            <td>Shad Decker</td>
+                                            <td>PMS</td>
+                                            <td>200</td>
+                                            <td>20</td>
+                                            <td>2008/11/13</td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>Donna Snider</td>
-                                            <td>Customer Support</td>
-                                            <td>New York</td>
-                                            <td>27</td>
-                                            <td>2011/01/25</td>
-                                            <td><a href="vehicle_assign_info.php">Detail</a></td>
+                                            <td>112233</td>
+                                            <td>Shad Decker</td>
+                                            <td>PMS</td>
+                                            <td>200</td>
+                                            <td>20</td>
+                                            <td>2008/11/13</td>
                                         </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>

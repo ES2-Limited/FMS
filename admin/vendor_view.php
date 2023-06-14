@@ -23,9 +23,9 @@
                                 <table class="table table-bordered table-striped table-hover">
                                     <thead>
                                         <tr>
-                                            <th colspan="4"> VENDOR Data  </th>
+                                            <th colspan="4"> VENDOR DATA  </th>
                                             
-                                        </tr
+                                        </tr>
                                         <tr>
                                             <th>VENDOR NAME</th>
                                             <th>VENDOR OFFICIAL ADDRESS</th>

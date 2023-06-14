@@ -10,15 +10,15 @@
     <section class="content">
         <div class="container-fluid">            
             <div class="block-header">
-                <h2> FUEL MANAGEMENT </h2>
+                <h2> VEHICLE MANAGEMENT </h2>
             </div>
 
             <!-- Basic Validation -->
             <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>FUEL REQUEST </h2>
+                            <h2>VEHICLE REGISTRATION</h2>
                         </div>
 
                             <?php
@@ -28,43 +28,61 @@
                             ?>
 
                         <div class="body">
-                            <form id="form_validation" method="POST" action="" name="fuel_approval">
+                            <form id="form_validation" method="POST" action="receive_item.php" name="receive">
                                 
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" name="reg_number"  required>
-                                        <label class="form-label">Vehicle Registration Number</label>
+                                        <input type="text" class="form-control" name="vehicle_name"  required>
+                                        <label class="form-label">Vehicle Name</label>
                                     </div>
                                 </div>
-                                
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="driver"  required>
-                                        <label class="form-label">Driver Name</label>
-                                    </div>
-                                </div>
-
                                 <div class="form-group form-float form-line">
-                                    <select class="form-control show-tick" name="product" required>
-                                        <option >Please select a product</option>
-                                        <option > PMS </option>
-                                        <option > Diseal </option>
-                                        <option > Gasoline  </option>
+                                   
+                                    <select class="form-control show-tick" name="vehicle-type" required>
+                                        <option >Please select Vehicle Type</option>
+                                        <option > Car</option>
+                                        <option > SUV</option>
+                                        <option > Salon</option>
                                         
                                     </select>
                                 </div>
 
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="number" class="form-control" name="Request_qty" min="0" required>
-                                        <label class="form-label">Requested Quantity/Litres</label>
+                                        <input type="text" class="form-control" name="plate" required>
+                                        <label class="form-label">Plate Number</label>
                                     </div>
                                 </div>
 
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="number" class="form-control" name="odometer" min="0" required>
-                                        <label class="form-label">Current Odometer Reading</label>
+                                        <input type="number" class="form-control" name="chasis" min="0" required>
+                                        <label class="form-label">Vehicle Chasis Number</label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="Manufacturer" required>
+                                        <label class="form-label">Vehicle Manufacturer</label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="sec_no" >
+                                        <label class="form-label">Vehicle Security Number</label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="number" class="form-control" name="asset_no" min="0" >
+                                        <label class="form-label">Asset Number</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group form-float">
+                                    <div class="form-line col-lg-6">
+                                        <input type="date" class="form-control" name="date_of_purchase" >
+                                        <label class="form-label">Date of Purchase </label>
                                     </div>
                                 </div>
                                 
@@ -75,7 +93,7 @@
                                     </div>
                                 </div>
                                 
-                                <button class="btn btn-primary waves-effect" type="submit" name="fuel_approval">SAVE</button>
+                                <button class="btn btn-primary waves-effect" type="submit" name="tyre_puchase">SAVE</button>
                             </form>
                         </div>
                     </div>

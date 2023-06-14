@@ -1,13 +1,13 @@
 <?php
     session_start();
-
+    
     include 'head.php';
     include 'nav.php';
 ?>
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2> VEHICLE MANAGEMENT</h2>
+                <h2> VEHICLE MANAGEMENT </h2>
             </div>
 
             <!-- Exportable Table -->
@@ -15,50 +15,45 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>REPORT: VEHICLE-DRIVER ASSIGNMENT </h2>
+                            <h2>VEHICLE'S INFORMATION  </h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped table-hover dataTable js-exportable">
-                                    <thead>
-                                        <tr>
-                                            <th>S/N</th>
-                                            <th>Driver Name</th>
-                                            <th>Assigned Vehicle Name</th>
-                                            <th>Starting Odometer</th>
-                                            <th>Vehicle Status</th>
-                                            <th>Date</th>
-                                            <th> </th>
-                                        </tr>
-                                    </thead>
+                                <table class="table table-hover dataTable " align="center">
+                                    
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Shad Decker</td>
-                                            <td>Regional Director</td>
-                                            <td>Edinburgh</td>
-                                            <td>Edinburgh</td>
-                                            <td>2008/11/13</td>
-                                            <td><a href="vehicle_assign_info.php">Detail</a></td>
+                                            <th >Vehicle Make: </th>
+                                            <td > Toyota</td>
+                                            <th>Vehicle Type: </th>
+                                            <td> Car</td>
+                                            <th>Vehicle Model : </th>
+                                            <td>2015</td>
                                         </tr>
                                         <tr>
-                                            <td>2</td>
-                                            <td>Michael Bruce</td>
-                                            <td>Javascript Developer</td>
-                                            <td>Singapore</td>
-                                            <td>Singapore</td>
-                                            <td>2011/06/27</td>
-                                            <td><a href="vehicle_assign_info.php">Detail</a></td>
+                                            <td colspan="8"> </td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
-                                            <td>Donna Snider</td>
-                                            <td>Customer Support</td>
-                                            <td>New York</td>
-                                            <td>27</td>
-                                            <td>2011/01/25</td>
-                                            <td><a href="vehicle_assign_info.php">Detail</a></td>
+                                            <th>Plate Number</th>
+                                            <td>ABJ321XY</td>
+                                            <th>Chasis Number: </th>
+                                            <td>11221973</td>
+                                            <th> Manufacturer:</th>
+                                            <td>Toyota</td>
                                         </tr>
+                                        <tr>
+                                            <td colspan="8"> </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Vehicle Security Number:</th>
+                                            <td>2345765</td>
+                                            <th>Asset Number: </th>
+                                            <td>Nigerian</td>
+                                            <th>Date of Purchase: </th>
+                                            <td>30-07-2023</td>
+
+                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>

@@ -40,6 +40,7 @@
                                             <td>Edinburgh</td>
                                             <td>Edinburgh</td>
                                             <td>2008/11/13</td>
+                                            <td><a href="vehicle_info.php">Detail</a></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -49,6 +50,7 @@
                                             <td>Singapore</td>
                                             <td>Singapore</td>
                                             <td>2011/06/27</td>
+                                            <td><a href="vehicle_info.php">Detail</a></td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
@@ -58,6 +60,7 @@
                                             <td>New York</td>
                                             <td>27</td>
                                             <td>2011/01/25</td>
+                                            <td><a href="vehicle_info.php">Detail</a></td>
                                         </tr>
                                     </tbody>
                                 </table>

@@ -56,7 +56,7 @@
                                 <div class="form-group form-float">
                                     <div class="form-line">
                                         <input type="text" class="form-control" name="username" value="<?php echo "$username";?>" required readonly disabled>
-                                        <label class="form-label">Username</label>
+                                        <label class="form-label">Username / Staff ID</label>
                                     </div>
                                 </div>
 

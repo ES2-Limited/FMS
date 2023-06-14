@@ -10,7 +10,7 @@
     <section class="content">
         <div class="container-fluid">            
             <div class="block-header">
-                <h2> FUEL MANAGEMENT </h2>
+                <h2> VEHICLE MANAGEMENT </h2>
             </div>
 
             <!-- Basic Validation -->
@@ -18,7 +18,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>FUEL REQUEST </h2>
+                            <h2>VEHICLE - DRIVER ASSIGNMENT</h2>
                         </div>
 
                             <?php
@@ -28,44 +28,44 @@
                             ?>
 
                         <div class="body">
-                            <form id="form_validation" method="POST" action="" name="fuel_approval">
-                                
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="reg_number"  required>
-                                        <label class="form-label">Vehicle Registration Number</label>
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="driver"  required>
-                                        <label class="form-label">Driver Name</label>
-                                    </div>
+                            <form id="form_validation" method="POST" action="receive_item.php" name="receive">
+                                <div class="form-group form-float form-line">
+                                   
+                                    <select class="form-control show-tick" name="driver" required>
+                                        <option >Please select a Driver</option>
+                                        <option > Saif</option>
+                                        <option > John</option>
+                                        
+                                    </select>
                                 </div>
 
                                 <div class="form-group form-float form-line">
-                                    <select class="form-control show-tick" name="product" required>
-                                        <option >Please select a product</option>
-                                        <option > PMS </option>
-                                        <option > Diseal </option>
-                                        <option > Gasoline  </option>
+                                   
+                                    <select class="form-control show-tick" name="vehicle_assign" required>
+                                        <option >Please select a vehicle</option>
+                                        <option > Toyota Prado </option>
+                                        <option > Mustang </option>
+                                        <option > Benz  </option>
                                         
                                     </select>
                                 </div>
 
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="number" class="form-control" name="Request_qty" min="0" required>
-                                        <label class="form-label">Requested Quantity/Litres</label>
+                                        <input type="number" class="form-control" name="odometer" min="0" required>
+                                        <label class="form-label">Starting Odometer</label>
                                     </div>
                                 </div>
-
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="number" class="form-control" name="odometer" min="0" required>
-                                        <label class="form-label">Current Odometer Reading</label>
-                                    </div>
+                                <div class="form-group form-float form-line">
+                                   
+                                    <select class="form-control show-tick" name="vehicle_status" required>
+                                        <option >Please select a Vehicle Status</option>
+                                        <option > Excellent Condition </option>
+                                        <option > Good </option>
+                                        <option > Movable  </option>
+                                        <option > Bad  </option>
+                                        
+                                    </select>
                                 </div>
                                 
                                 <div class="form-group form-float">
@@ -75,7 +75,7 @@
                                     </div>
                                 </div>
                                 
-                                <button class="btn btn-primary waves-effect" type="submit" name="fuel_approval">SAVE</button>
+                                <button class="btn btn-primary waves-effect" type="submit" name="tyre_puchase">SAVE</button>
                             </form>
                         </div>
                     </div>

@@ -25,21 +25,21 @@
                                         <tr>
                                             <th>S/N</th>
                                             <th>SELECT VEHICLE</th>
-                                            <!-- <th>SELECT VENDOR</th> -->
                                             <th>TYRE QUANTITY</th>
-                                            <!-- <th>RATE</th> -->
                                             <th>VEHICLE ODOMETER</th>
-                                            <th>Date</th>
                                             <th>Action</th>
+                                            <th>Date</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>

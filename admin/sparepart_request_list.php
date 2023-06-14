@@ -1,12 +1,11 @@
 <?php
-    session_start();
 
-    include '../conn.php';
     include 'head.php';
     include 'nav.php';
 ?>
     <section class="content">
         <div class="container-fluid">
+    
             <div class="block-header">
                 <h2> SPARE PART REQUEST </h2>
             </div>
@@ -23,24 +22,34 @@
                                 <table class="table table-bordered table-striped table-hover-exportable">
                                     <thead>
                                         <tr>
-                                            <th colspan="6">VIEW SPARE PART REQUEST</th>                                            
-                                        </tr>
-                                        <tr>
                                             <th>S/N</th>
                                             <th>Vehicle Registration No</th>
                                             <th>Driver Name</th>
                                             <th>Spare Part Needed</th>
                                             <th>Reason</th>
                                             <th>Date</th>
+                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody> 
-                                        <td> </td>
-                                        <td> </td>
-                                        <td> </td>
-                                        <td> </td>
-                                        <td></td>
-                                        <td></td>
+                                        <tr>
+                                            <td> 1 </td>
+                                            <td> 112233</td>
+                                            <td> Saif </td>
+                                            <td> brake oil</td>
+                                            <td> dried</td>
+                                            <td> 20-03-2012</td>
+                                            <td> <a href="sparepart_approval.php">Approval</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2 </td>
+                                            <td> 112233</td>
+                                            <td> Saif </td>
+                                            <td> Engine oil</td>
+                                            <td> top-up</td>
+                                            <td> 20-03-2022</td>
+                                            <td> <a href="sparepart_approval.php">Approval</a></td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>

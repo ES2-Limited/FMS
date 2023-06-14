@@ -1,13 +1,13 @@
 <?php
     session_start();
-
+    
     include 'head.php';
     include 'nav.php';
 ?>
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2> FUEL REQUEST </h2>
+                <h2> VEHICLE MANAGEMENT </h2>
             </div>
 
             <!-- Exportable Table -->
@@ -15,50 +15,31 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>FUEL REQUEST </h2>
+                            <h2>VEHICLE'S ASSIGNMENT INFORMATION  </h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped table-hover dataTable js-exportable">
-                                    <thead>
-                                        <tr>
-                                            <th>S/N</th>
-                                            <th>Vehicle Registration No.</th>
-                                            <th>Driver Name</th>
-                                            <th>Product</th>
-                                            <th>Quantity/Litres</th>
-                                            <th>Approved/Litres</th>
-                                            <th>Date</th>
-                                            
-                                        </tr>
-                                    </thead>
+                                <table class="table table-hover dataTable " align="center">
+                                    
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>112233</td>
-                                            <td>Shad Decker</td>
-                                            <td>PMS</td>
-                                            <td>200</td>
-                                            <td>20</td>
-                                            <td>2008/11/13</td>
+                                            <th>Driver Name: </th>
+                                            <td> Musty John</td>
+                                            <th>Assigned Vehicle Make: </th>
+                                            <td> Toyota</td>
+                                            <th>Starting Odometer : </th>
+                                            <td>200105</td>
                                         </tr>
                                         <tr>
-                                            <td>2</td>
-                                            <td>112233</td>
-                                            <td>Shad Decker</td>
-                                            <td>PMS</td>
-                                            <td>200</td>
-                                            <td>20</td>
-                                            <td>2008/11/13</td>
+                                            <td colspan="8"> </td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
-                                            <td>112233</td>
-                                            <td>Shad Decker</td>
-                                            <td>PMS</td>
-                                            <td>200</td>
-                                            <td>20</td>
-                                            <td>2008/11/13</td>
+                                            <th>Plate Number</th>
+                                            <td>ABJ321XY</td>
+                                            <th>Vehicle Status: </th>
+                                            <td>Good</td>
+                                            <th> Date Assigned : </th>
+                                            <td>23-11-2022</td>
                                         </tr>
                                         
                                     </tbody>

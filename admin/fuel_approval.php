@@ -18,7 +18,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>FUEL REQUEST </h2>
+                            <h2>FUEL APPROVAL </h2>
                         </div>
 
                             <?php
@@ -63,6 +63,13 @@
 
                                 <div class="form-group form-float">
                                     <div class="form-line">
+                                        <input type="number" class="form-control" name="Request_qty" min="0" required>
+                                        <label class="form-label">Approved Quantity/Litres</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
                                         <input type="number" class="form-control" name="odometer" min="0" required>
                                         <label class="form-label">Current Odometer Reading</label>
                                     </div>
@@ -75,7 +82,8 @@
                                     </div>
                                 </div>
                                 
-                                <button class="btn btn-primary waves-effect" type="submit" name="fuel_approval">SAVE</button>
+                                <button class="btn btn-primary waves-effect" type="submit" name="fuel_approve">Approve</button>
+                                <button class="btn btn-danger waves-effect pull-right" type="submit" name="fuel_disapprove">Disapprove</button>
                             </form>
                         </div>
                     </div>
