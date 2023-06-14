@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="info-box bg-green hover-zoom-effect">
+                    <div class="info-box bg-cyan hover-zoom-effect">
                         <div class="icon">
                             <i class="material-icons">local_gas_station</i>
                         </div>
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="info-box bg-cyan hover-zoom-effect">
+                    <div class="info-box bg-light-green hover-zoom-effect">
                         <div class="icon">
                             <i class="material-icons">build</i>
                         </div>
