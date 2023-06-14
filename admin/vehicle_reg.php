@@ -43,29 +43,32 @@
                                         <option > Car</option>
                                         <option > SUV</option>
                                         <option > Salon</option>
-                                        
                                     </select>
                                 </div>
 
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" name="plate" required>
+                                        <input type="text" class="form-control" name="plate" style="text-transform: uppercase;" required>
                                         <label class="form-label">Plate Number</label>
                                     </div>
                                 </div>
 
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="number" class="form-control" name="chasis" min="0" required>
+                                        <input type="text" class="form-control" name="chasis" required>
                                         <label class="form-label">Vehicle Chasis Number</label>
                                     </div>
                                 </div>
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="Manufacturer" required>
-                                        <label class="form-label">Vehicle Manufacturer</label>
-                                    </div>
+                                <div class="form-group form-float form-line">
+                                   
+                                    <select class="form-control show-tick" name="manufacturer" required>
+                                        <option >Please select Vehicle Manufacturer</option>
+                                        <option > Benz</option>
+                                        <option > VW</option>
+                                        <option > Toyota</option>
+                                    </select>
                                 </div>
+
                                 <div class="form-group form-float">
                                     <div class="form-line">
                                         <input type="text" class="form-control" name="sec_no" >
@@ -74,7 +77,7 @@
                                 </div>
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="number" class="form-control" name="asset_no" min="0" >
+                                        <input type="text" class="form-control" name="asset_no"  >
                                         <label class="form-label">Asset Number</label>
                                     </div>
                                 </div>
