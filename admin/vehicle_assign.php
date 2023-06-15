@@ -40,14 +40,19 @@
                                 </div>
 
                                 <div class="form-group form-float form-line">
-                                   
                                     <select class="form-control show-tick" name="vehicle_assign" required>
                                         <option >Please select a vehicle</option>
                                         <option > Toyota Prado </option>
                                         <option > Mustang </option>
                                         <option > Benz  </option>
-                                        
                                     </select>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="number" class="form-control" name="vehicle_id" style="text-transform: uppercase;" required>
+                                        <label class="form-label">Vehicle ID</label>
+                                    </div>
                                 </div>
 
                                 <div class="form-group form-float">

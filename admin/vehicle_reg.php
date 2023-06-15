@@ -28,7 +28,7 @@
                             ?>
 
                         <div class="body">
-                            <form id="form_validation" method="POST" action="receive_item.php" name="receive">
+                            <form id="form_validation" method="POST" action="" name="vehicle_reg">
                                 
                                 <div class="form-group form-float">
                                     <div class="form-line">
@@ -96,7 +96,7 @@
                                     </div>
                                 </div>
                                 
-                                <button class="btn btn-primary waves-effect" type="submit" name="tyre_puchase">SAVE</button>
+                                <button class="btn btn-primary waves-effect" type="submit" name="vehicle_reg">SAVE</button>
                             </form>
                         </div>
                     </div>

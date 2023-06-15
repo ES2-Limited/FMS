@@ -1,24 +1,22 @@
 <?php
-    session_start();
-
-    include ('../conn.php');
 
     include 'head1.php';
     include 'nav.php';
 
+
 ?>
     <section class="content">
-        <div class="container-fluid">            
+        <div class="container-fluid">
             <div class="block-header">
-                <h2> FUEL MANAGEMENT </h2>
+                <h2> VEHICLE MAINTENANCE  </h2>
             </div>
 
             <!-- Basic Validation -->
             <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>FUEL REQUEST </h2>
+                            <h2>VEHICLE MAINTENANCE SERVICE REQUEST APPROVAL </h2>
                         </div>
 
                             <?php
@@ -28,54 +26,47 @@
                             ?>
 
                         <div class="body">
-                            <form id="form_validation" method="POST" action="" name="fuel_approval">
-                                
+                            <form id="form_validation" method="POST" action="" name="serv_approval">
+                            
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" name="vehicle_reg_number" style="text-transform: uppercase;"  required>
-                                        <label class="form-label">Vehicle Registration Number</label>
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="driver"  required>
+                                        <input type="text" class="form-control" name="driver_name" required>
                                         <label class="form-label">Driver Name</label>
                                     </div>
                                 </div>
-
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="v-id" style="text-transform: uppercase;" required>
+                                        <label class="form-label">Vehicle ID</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="number" class="form-control" name="odometer" min="0" required>
+                                        <label class="form-label">Current Odometer</label>
+                                    </div>
+                                </div>
+                                
                                 <div class="form-group form-float form-line">
                                     <select class="form-control show-tick" name="product" required>
-                                        <option >Please select a product</option>
-                                        <option > PMS </option>
-                                        <option > Diseal </option>
-                                        <option > Gasoline  </option>
+                                        <option >Please Select a Service Type</option>
+                                        <option > Brakes </option>
+                                        <option > Engine Issue </option>
+                                        <option > Fuel Pump </option>
                                         
                                     </select>
                                 </div>
 
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="number" class="form-control" name="Request_qty" min="0" required>
-                                        <label class="form-label">Requested Quantity/Litres</label>
-                                    </div>
-                                </div>
-
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="number" class="form-control" name="odometer" min="0" required>
-                                        <label class="form-label">Current Odometer Reading</label>
-                                    </div>
-                                </div>
-                                
                                 <div class="form-group form-float">
                                     <div class="form-line col-lg-6">
                                         <input type="datetime" class="form-control" name="date" value="<?php echo($time) ?>" disabled="">
                                         <label class="form-label">Date </label>
                                     </div>
                                 </div>
+                                <button class="btn btn-primary waves-effect" type="submit" name="fuel_approve">Approve</button>
+                                <button class="btn btn-danger waves-effect pull-right" type="submit" name="fuel_disapprove">Disapprove</button>
                                 
-                                <button class="btn btn-primary waves-effect" type="submit" name="fuel_approval">SAVE</button>
                             </form>
                         </div>
                     </div>
@@ -85,6 +76,7 @@
             
         </div>
     </section>
+
 <?php mysqli_close($db);  // close connection ?>
     <!-- Jquery Core Js -->
     <script src="../plugins/jquery/jquery.min.js"></script>

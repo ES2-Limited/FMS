@@ -1,8 +1,6 @@
 <?php
     session_start();
 
-    include ('../conn.php');
-
     include 'head1.php';
     include 'nav.php';
 
@@ -32,7 +30,7 @@
                                 
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" name="reg_number"  required>
+                                        <input type="text" class="form-control" name="reg_number" style="text-transform: uppercase;" required>
                                         <label class="form-label">Vehicle Registration Number</label>
                                     </div>
                                 </div>
@@ -84,6 +82,7 @@
                                 
                                 <button class="btn btn-primary waves-effect" type="submit" name="fuel_approve">Approve</button>
                                 <button class="btn btn-danger waves-effect pull-right" type="submit" name="fuel_disapprove">Disapprove</button>
+
                             </form>
                         </div>
                     </div>

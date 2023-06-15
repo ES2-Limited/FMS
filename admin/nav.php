@@ -133,9 +133,9 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="main_serv_req_add.php">
+                                <a href="main_serv_type.php">
                                     <i class="material-icons">assignment</i>
-                                    <span>Add Vehicle Service</span>
+                                    <span>Add Vehicle Service Type</span>
                                 </a>
                             </li>
                             <li>
@@ -145,7 +145,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="main_serv_req_list.php">
+                                <a href="main_serv_report.php">
                                     <i class="material-icons">assignment</i>
                                     <span>Vehicle Service Report</span>
                                 </a>

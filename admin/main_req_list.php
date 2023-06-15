@@ -7,7 +7,7 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2> VEHICLE MAINTENANCE REQUEST  </h2>
+                <h2> VEHICLE MAINTENANCE  </h2>
             </div>
 
             <!-- Exportable Table -->
@@ -28,6 +28,7 @@
                                             <th>Department/Unit</th>
                                             <th>Vehicle No.</th>
                                             <th>Date</th>
+                                            <th> </th>
                                             
                                         </tr>
                                     </thead>
@@ -39,6 +40,7 @@
                                             <td>33224455</td>
                                             <td>2008/11/13</td>
                                             <td>2012-09-26</td>
+                                            <td><a href="main_req_review.php">Review</a> </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -47,6 +49,7 @@
                                             <td>33224455</td>
                                             <td>2008/11/13</td>
                                             <td>2012-09-26</td>
+                                            <td><a href="main_req_review.php">Review</a> </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
@@ -55,6 +58,7 @@
                                             <td>33224455</td>
                                             <td>2008/11/13</td>
                                             <td>2012-09-26</td>
+                                            <td><a href="main_req_review.php">Review</a> </td>
                                         </tr>
                                     </tbody>
                                 </table>

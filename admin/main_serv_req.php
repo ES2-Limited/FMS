@@ -7,7 +7,7 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2> VEHICLE SERVICE REQUEST </h2>
+                <h2> VEHICLE MAINTENANCE  </h2>
             </div>
 
             <!-- Exportable Table -->
@@ -15,7 +15,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>VEHICLE SERVICE REQUEST </h2>
+                            <h2> VEHICLE SERVICE REQUEST </h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
@@ -28,6 +28,7 @@
                                             <th>Current Odometer</th>
                                             <th>Service Type</th>
                                             <th>Date</th>
+                                            <th> </th>
                                             
                                         </tr>
                                     </thead>
@@ -39,6 +40,7 @@
                                             <td>33224455</td>
                                             <td>2008/11/13</td>
                                             <td>2012-09-26</td>
+                                            <td><a href="main_serv_approval.php">Approval</a> </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -47,6 +49,7 @@
                                             <td>33224455</td>
                                             <td>2008/11/13</td>
                                             <td>2012-09-26</td>
+                                            <td><a href="main_serv_approval.php">Approval</a> </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
@@ -55,6 +58,7 @@
                                             <td>33224455</td>
                                             <td>2008/11/13</td>
                                             <td>2012-09-26</td>
+                                            <td><a href="main_serv_approval.php">Approval</a> </td>
                                         </tr>
                                     </tbody>
                                 </table>

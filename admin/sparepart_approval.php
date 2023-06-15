@@ -35,7 +35,7 @@
                                 <div class="form-group">
                                     <div class="form-line">
                                         <label for="vehicle_reg">Vehicle Registration No.</label>
-                                        <input type="text" class="form-control" name="vehicle_reg_no">                                        
+                                        <input type="text" class="form-control" name="vehicle_reg_no" style="text-transform: uppercase;" >                                        
                                     </div>
                                 </div>
                                 <div class="form-group">

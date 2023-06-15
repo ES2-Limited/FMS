@@ -7,7 +7,7 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2> VEHICLE SERVICE REQUEST REPORT</h2>
+                <h2> VEHICLE MAINTENANCE </h2>
             </div>
 
             <!-- Exportable Table -->
