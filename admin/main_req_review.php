@@ -82,10 +82,8 @@
                                     <label for="routine">Routine Maintenance</label>
                                     
                                     <input type="radio" name="role" id="repair" value="repair" class="with-gap">
-                                    <label for="repair" class="m-l-20">repair Works</label>
-                                    
+                                    <label for="repair" class="m-l-20">Repair Works</label>
                                 </div>
-                                
                                 
                                 <div class="form-group form-float">
                                     <div class="form-line">
@@ -95,7 +93,7 @@
                                 </div>
                                 
                                 <div class="form-group form-float">
-                                    <div class="form-line col-lg-6">
+                                    <div class="form-line ">
                                         <input type="datetime" class="form-control" name="date" value="<?php echo($time) ?>" disabled="">
                                         <label class="form-label">Date </label>
                                     </div>
