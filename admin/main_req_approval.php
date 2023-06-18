@@ -29,7 +29,7 @@
                             
                             <h5>The below Maintenance is endosed and recommended to be carried out</h5>
 
-                            <form id="form_validation" method="POST" action="" name="req_approval">
+                            <form id="form_validation" method="POST" action="main_req_print.php" name="req_approval">
                             
                                 
                                 <div class="form-group form-float ">
@@ -43,15 +43,31 @@
 
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="text" class="form-control" name="v-id" style="text-transform: uppercase;" required>
-                                        <label class="form-label">Vehicle ID</label>
+                                        <p>1. .............................................................</p>
+                                        <p>2. .............................................................</p>
+                                        <p>3. .............................................................</p>
+                                        <p>4. .............................................................</p>
+                                        <p>5. .............................................................</p>
+                                        <p>6. .............................................................</p>
+                                        <p>7. .............................................................</p>
+                                        <p>8. .............................................................</p>
+                                        <p>9. .............................................................</p>
+                                        <p>10. .............................................................</p>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="officer"  required>
+                                        <label class="form-label">Supervising Officer</label>
                                     </div>
                                 </div>
                                 
                                 <div class="form-group form-float">
                                     <div class="form-line">
                                         <input type="number" class="form-control" name="odometer" min="0" required>
-                                        <label class="form-label">Current Odometer</label>
+                                        <label class="form-label">AGM (T)</label>
                                     </div>
                                 </div>
 
@@ -116,6 +132,7 @@
 
     <!-- Demo Js -->
     <script src="../js/demo.js"></script>
+
 </body>
 
 </html>

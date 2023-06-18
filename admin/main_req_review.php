@@ -26,7 +26,7 @@
                             ?>
 
                         <div class="body">
-                            <form id="form_validation" method="POST" action="" name="req_review">
+                            <form id="form_validation" method="POST" action="main_req_approval.php" name="req_review">
                             
                                 <div class="form-group form-float">
                                     <div class="form-line">
