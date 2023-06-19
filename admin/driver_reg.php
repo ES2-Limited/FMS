@@ -13,76 +13,374 @@
                 <h2> DRIVER REGISTRATION </h2>
             </div>
 
-            <!-- Basic Validation -->
+            <!-- Data Entry -->
             <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>PERSONAL INFORMATION</h2>
-                        </div>
+                <div class="card col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                            <?php
-                                if(isset($error)){
-                                    echo $error;
-                                }
-                            ?>
+                    <?php
+                        if(isset($error)){
+                            echo $error;
+                        }
+                    ?>
 
+                    <form id="form_validation" method="POST" action="" name="driver_reg">
                         <div class="body">
-                            <form id="form_validation" method="POST" action="receive_item.php" name="receive">
+                            <div class="col-lg-6">
+                                <div class="header">
+                                    <h2>PERSONAL INFORMATION</h2>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="sname"  required>
+                                        <label class="form-label">Surname Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="mname"  >
+                                        <label class="form-label">Middle Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="fname"  required>
+                                        <label class="form-label">First Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="number" class="form-control" name="phone" step="any" min="0" required>
+                                        <label class="form-label">Phone Number</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="email" class="form-control" name="email" >
+                                        <label class="form-label">Email Address</label>
+                                    </div>
+                                </div>
+
                                 <div class="form-group form-float form-line">
-                                   
-                                    <select class="form-control show-tick" name="vehicle" required>
-                                        <option >Please select a Vehicle</option>
-                                        <option > SUV</option>
-                                        <option > Salon</option>
+                                    <h6>Residential Address</h6>
+                                </div>
+
+                                <div class="form-group form-float form-line">
+                                    <select class="form-control show-tick" name="rstate" required>
+                                        <option >Please select a State</option>
+                                        <option > FCT</option>
+                                        <option > Abia</option>
                                         
                                     </select>
                                 </div>
 
                                 <div class="form-group form-float form-line">
-                                   
-                                    <select class="form-control show-tick" name="vendor" required>
-                                        <option >Please select a Vendor</option>
-                                        <option > AYM SHAFA </option>
-                                        <option > Tronic Villa </option>
-                                        <option > Total </option>
-                                        
+                                    <select class="form-control show-tick" name="rlga" required>
+                                        <option >Please select a LGA</option>
+                                        <option > AMAC</option>
+                                        <option > Kuje</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group form-float form-line">
+                                    <select class="form-control show-tick" name="rtown" required>
+                                        <option >Please select a Town/City</option>
+                                        <option > Lugbe</option>
+                                        <option > CBD</option>
                                     </select>
                                 </div>
 
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="number" class="form-control" name="quantity" min="0" required>
-                                        <label class="form-label">Tyre Quantity</label>
+                                        <input type="text" class="form-control" name="rstreet"  required>
+                                        <label class="form-label">House number / Street</label>
                                     </div>
                                 </div>
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="number" class="form-control" name="rate" step="any" min="0" required>
-                                        <label class="form-label">Rate</label>
-                                    </div>
+
+                                <div class="form-group form-float form-line">
+                                    <h6>Permanent Address</h6>
                                 </div>
+
+                                <div class="form-group form-float form-line">
+                                    <select class="form-control show-tick" name="nation" required>
+                                        <option > Country of Origin </option>
+                                        <option >Nigeria</option>
+                                        <option > Biafra</option>
+                                        
+                                    </select>
+                                </div>
+
+                                <div class="form-group form-float form-line">
+                                    <select class="form-control show-tick" name="pstate" required>
+                                        <option >State of Origin</option>
+                                        <option > FCT</option>
+                                        <option > Abia</option>
+                                        
+                                    </select>
+                                </div>
+
+                                <div class="form-group form-float form-line">
+                                    <select class="form-control show-tick" name="plga" required>
+                                        <option >LGA of Origin</option>
+                                        <option > AMAC</option>
+                                        <option > Kuje</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group form-float form-line">
+                                    <select class="form-control show-tick" name="ptown" required>
+                                        <option >Town/City of Origin </option>
+                                        <option > Lugbe</option>
+                                        <option > CBD</option>
+                                    </select>
+                                </div>
+
                                 <div class="form-group form-float">
                                     <div class="form-line">
-                                        <input type="number" class="form-control" name="odometer" step="any" min="0" required>
-                                        <label class="form-label">Vehicle Odometer</label>
+                                        <input type="text" class="form-control" name="phouse"  required>
+                                        <label class="form-label">House number / Street</label>
                                     </div>
                                 </div>
                                 
                                 <div class="form-group form-float">
                                     <div class="form-line col-lg-6">
-                                        <input type="datetime" class="form-control" name="date" value="<?php echo($time) ?>" disabled="">
-                                        <label class="form-label">Date </label>
+                                        <input type="date" class="form-control" name="dob" >
+                                        <label class="form-label">Date of Birth (DOB) </label>
                                     </div>
                                 </div>
                                 
-                                <button class="btn btn-primary waves-effect" type="submit" name="tyre_puchase">SAVE</button>
-                            </form>
+                                <div class="form-group form-float">
+                                    <div class="form-line col-lg-6">
+                                        <input type="text" class="form-control" name="license" >
+                                        <label class="form-label">Driver's License Number </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group form-float">
+                                    <div class="form-line col-lg-6">
+                                        <input type="date" class="form-control" name="license_expire" >
+                                        <label class="form-label">Driver's License Expiry Date </label>
+                                    </div>
+                                </div>
+
+                                <div class="header">
+                                    <h2>MEDICAL DETAILS</h2>
+                                </div>
+
+                                <div class="form-group form-float form-line">
+                                    <select class="form-control show-tick" name="blood_gp" >
+                                        <option >Blood Group</option>
+                                        <option > O+ </option>
+                                        <option > O- </option>
+                                        <option > A+ </option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group form-float form-line">
+                                    <select class="form-control show-tick" name="genotype" >
+                                        <option >Genotype</option>
+                                        <option > AA </option>
+                                        <option > AC </option>
+                                        <option > AS </option>
+                                        <option > SC </option>
+                                        <option > SS </option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="allegies" >
+                                        <label class="form-label">Allegies</label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="medical" >
+                                        <label class="form-label">Medical Challenge</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class=" col-lg-6">
+                                <div class="header">
+                                    <h2> NEXT OF KIN DETAILS</h2>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="fname_kin" required>
+                                        <label class="form-label">First Name </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="mname_kin" >
+                                        <label class="form-label">Middle Name </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="lname_kin" required>
+                                        <label class="form-label">Last Name </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="number" class="form-control" name="phone_kin" min="0" required>
+                                        <label class="form-label">Phone Number</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="email" class="form-control" name="email_kin" >
+                                        <label class="form-label">Email Address</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="address_kin" required>
+                                        <label class="form-label">Residential Address</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float form-line">
+                                    
+                                    <select class="form-control show-tick" name="relationship" required>
+                                        <option >Relationship</option>
+                                        <option > Son</option>
+                                        <option > Father</option>
+                                        <option > Friend</option>
+                                        <option > Brother</option>
+                                        
+                                    </select>
+                                </div>
+                                    
+                                <div class="header">
+                                    <h2> REFEREE 1</h2>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="fname_referee" required>
+                                        <label class="form-label">Referee First Name </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="mname_referee" >
+                                        <label class="form-label">Referee Middle Name </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="lname_referee" required>
+                                        <label class="form-label">Referee Last Name </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="number" class="form-control" name="phone_referee" min="0" required>
+                                        <label class="form-label">Referee Phone Number</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="email" class="form-control" name="email_referee" >
+                                        <label class="form-label">Referee Email Address</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="address_referee" required>
+                                        <label class="form-label">Referee Residential Address</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="office_referee" required>
+                                        <label class="form-label">Referee Office Address</label>
+                                    </div>
+                                </div>
+
+ 
+                                <div class="header">
+                                    <h2> REFEREE 2</h2>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="fname_referee2" required>
+                                        <label class="form-label">Referee First Name </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="mname_referee2" >
+                                        <label class="form-label">Referee Middle Name </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="lname_referee2" required>
+                                        <label class="form-label">Referee Last Name </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="number" class="form-control" name="phone_referee2" min="0" required>
+                                        <label class="form-label">Referee Phone Number</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="email" class="form-control" name="email_referee2" >
+                                        <label class="form-label">Referee Email Address</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="address_referee2" required>
+                                        <label class="form-label">Referee Residential Address</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="office_referee2" required>
+                                        <label class="form-label">Referee Office Address</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                                <button class="btn btn-primary waves-effect" type="submit" name="driver_reg">SAVE</button>
+                                
                         </div>
-                    </div>
+                    </form>
+                    
                 </div>
             </div>
-            <!-- #END# Basic Validation -->
+            <!-- #END# Data entry  -->
             
         </div>
     </section>
