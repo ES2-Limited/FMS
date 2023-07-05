@@ -117,11 +117,11 @@
                                     <input type="radio" name="role" id="Administrator" value="Chairman" class="with-gap">
                                     <label for="Administrator" class="m-l-20">Administrator</label>
                                     
-                                    <input type="radio" name="role" id="head" value="Head" class="with-gap">
-                                    <label for="head" class="m-l-20">Head of Unit</label>
+                                    <input type="radio" name="role" id="manager" value="Manager" class="with-gap">
+                                    <label for="manager" class="m-l-20">Manager</label>
 
                                     <input type="radio" name="role" id="officer" value="officer" class="with-gap">
-                                    <label for="officer" class="m-l-20"> Officer</label>
+                                    <label for="officer" class="m-l-20">Transport Officer</label>
 
                                     <input type="radio" name="role" id="driver" value="driver" class="with-gap">
                                      <label for="driver" class="m-l-20"> Driver</label>
